@@ -49,8 +49,8 @@ public:
     string getToZip() const;
     double getWeightOz() const;
     double getCostPerOz() const;
-    double calculateCost() const;
-    void print() const;
+    virtual double calculateCost() const;
+    virtual void print() const;
 };
 
 #endif /* Package_hpp */

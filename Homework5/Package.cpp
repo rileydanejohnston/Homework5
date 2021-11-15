@@ -161,28 +161,21 @@ double Package::calculateCost() const
 
 void Package::print() const
 {
-    cout << "Sender info" << endl;
-    cout << "-----------------------------" << endl;
-    cout << "Name: "    << getFromName() << endl;
-    cout << "Address: " << getFromAddress() << endl;
-    cout << "City: "    << getFromCity() << endl;
-    cout << "State: "   << getFromState() << endl;
-    cout << "Zip: "     << getFromZip() << endl;
+    cout << "SENDER:" << endl;
+    cout << getFromName() << endl;
+    cout << getFromAddress() << endl;
+    cout << getFromCity() << ", " << getFromState() << " " << getFromZip() << endl;
     
     cout << endl;
     
-    cout << "Destination info" << endl;
-    cout << "-----------------------------" << endl;
-    cout << "Name: "    << getToName() << endl;
-    cout << "Address: " << getToAddress() << endl;
-    cout << "City: "    << getToCity() << endl;
-    cout << "State: "   << getToState() << endl;
-    cout << "Zip: "     << getToZip() << endl;
+    cout << "RECIPIENT:" << endl;
+    cout << getToName() << endl;
+    cout << getToAddress() << endl;
+    cout << getToCity() << ", " << getToState() << " " << getToZip() << endl;
     
     cout << endl;
     
-    cout << "Cost info" << endl;
-    cout << "-----------------------------" << endl;
+    cout << "PACKAGE INFO:" << endl;
     cout << "Weight: " << getWeightOz() << " ounces" << endl;
     cout << "Cost (per oz): $" << getCostPerOz() << endl;
 }

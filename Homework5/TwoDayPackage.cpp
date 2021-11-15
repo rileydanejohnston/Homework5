@@ -32,6 +32,5 @@ void TwoDayPackage::print() const
 {
     Package::print();
     cout << "Flat fee: $" << getFlatFee() << endl;
-    cout << "-----------------------------" << endl;
-    cout << "Total: $" << calculateCost() << endl;
+    cout << "---------------------" << endl;
 }

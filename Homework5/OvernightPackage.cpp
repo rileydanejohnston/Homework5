@@ -32,6 +32,5 @@ void OvernightPackage::print() const
 {
     Package::print();
     cout << "Extra fee per oz: $" << getExtraFeePerOz() << endl;
-    cout << "-----------------------------" << endl;
-    cout << "Total: $" << calculateCost() << endl;
+    cout << "---------------------" << endl;
 }
